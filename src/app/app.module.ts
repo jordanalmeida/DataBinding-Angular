@@ -10,17 +10,27 @@ import {MatInputModule} from '@angular/material/input';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { HeaderComponent } from './header/header.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatSelectModule} from '@angular/material/select';
 @NgModule({
   declarations: [
     AppComponent,
     StringInterpolationComponent,
     PropertyBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    HeaderComponent
   ],
   imports: [
+    MatCheckboxModule,
+    MatSelectModule,
     MatCardModule,
     MatButtonModule,
     MatInputModule,
+    MatToolbarModule,
+    MatIconModule,
     MatProgressSpinnerModule,
     BrowserModule,
     BrowserAnimationsModule
